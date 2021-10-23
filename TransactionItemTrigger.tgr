@@ -1,0 +1,4 @@
+trigger TransactionItemTrigger on TransactionItem__c ( after insert ) {
+    
+    TransactionItemTgrHandler.onAfterInsert(Trigger.New);
+}

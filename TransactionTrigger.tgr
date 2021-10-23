@@ -1,0 +1,5 @@
+trigger TransactionTrigger on Transaction__c (after insert, after update ) {
+    
+    TransactionTriggerHandler.onAfter(Trigger.New);
+
+}
